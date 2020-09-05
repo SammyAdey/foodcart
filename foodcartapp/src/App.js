@@ -5,10 +5,34 @@ import "./App.css";
 class App extends Component {
   state = {
     items: [
-      { id: 1, value: 0, title: "Test1", price: 8.5 },
-      { id: 2, value: 0, title: "Test1", price: 4.5 },
-      { id: 3, value: 0, title: "Test1", price: 11.9 },
-      { id: 4, value: 0, title: "Test1", price: 10.5 },
+      {
+        id: 1,
+        value: 0,
+        title: "Test1",
+        price: 8.5,
+        img: "https://picsum.photos/100",
+      },
+      {
+        id: 2,
+        value: 0,
+        title: "Test1",
+        price: 4.5,
+        img: "https://picsum.photos/100",
+      },
+      {
+        id: 3,
+        value: 0,
+        title: "Test1",
+        price: 11.9,
+        img: "https://picsum.photos/100",
+      },
+      {
+        id: 4,
+        value: 0,
+        title: "Test1",
+        price: 10.5,
+        img: "https://picsum.photos/100",
+      },
     ],
   };
 
@@ -42,6 +66,14 @@ class App extends Component {
     this.setState({ items });
   };
 
+  // totalPrice = () => {
+  //   const totalprice = this.state.items.map((c) => {
+  //     total += c.price;
+  //     return c;
+  //   });
+  //   return totalprice;
+  // };
+
   render() {
     return (
       <React.Fragment>
@@ -54,7 +86,7 @@ class App extends Component {
               onDecrement={this.handleDecrement}
             />
             <div className="priceTotal">
-              {this.state.items.filter((c) => c.value > 0).length}
+              Total: {this.state.items.totalPrice}
             </div>
           </div>
         </main>
