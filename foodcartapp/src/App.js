@@ -6,30 +6,30 @@ class App extends Component {
   state = {
     items: [
       {
-        id: 1,
+        id: 3455890,
         value: 0,
-        title: "Test1",
+        title: "Coconut Butter Milk",
         price: 8.5,
         img: "https://picsum.photos/100",
       },
       {
-        id: 2,
+        id: 7456890,
         value: 0,
-        title: "Test1",
+        title: "Chocolate Donuts",
         price: 4.5,
         img: "https://picsum.photos/100",
       },
       {
-        id: 3,
+        id: 545890,
         value: 0,
-        title: "Test1",
+        title: "Dried Fish",
         price: 11.9,
         img: "https://picsum.photos/100",
       },
       {
-        id: 4,
+        id: 3477891,
         value: 0,
-        title: "Test1",
+        title: "Powedered donuts",
         price: 10.5,
         img: "https://picsum.photos/100",
       },
