@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import { Add } from "material-ui-icons";
 
 class Item extends Component {
   render() {
@@ -16,7 +17,7 @@ class Item extends Component {
         <div className="item-actions">
           <div className="itemCount mr-3">
             <div onClick={() => this.props.onIncrement(this.props.item)}>
-              <i class="fa fa-plus-square" aria-hidden="true"></i>
+              <Add />
             </div>
             <div className="nOfItems">{this.props.item.value}</div>
             <div onClick={() => this.props.onDecrement(this.props.item)}>-</div>
