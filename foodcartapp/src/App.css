@@ -9,7 +9,7 @@ body {
 }
 
 .Item h3 {
-  font-size: 20px;
+  font-size: 15px;
   margin: 0px;
   padding: 0px;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .cart {
-  width: 80vw;
+  width: 90vw;
   background: #e5e8ed;
   padding: 30px 50px;
   border-radius: 5px;
@@ -29,17 +29,21 @@ body {
   box-shadow: 0px 0px 25px rgba(95, 112, 122, 0.2);
 }
 
+.Items {
+  margin: 40px 0;
+}
+
 .Item {
   display: flex;
+  margin: 10px 0;
   padding: 20px 0px;
-  justify-content: space-between;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
   align-content: center;
 }
 
 .item-thumbnail {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   box-shadow: 0px 0px 15px rgba(95, 112, 122, 0.3);
   background: #a1b3c1;
@@ -48,15 +52,13 @@ body {
 
 .item-details {
   display: flex;
-  max-width: 400px;
-  justify-content: space-between;
 }
 
 .item-title {
   display: block;
   align-content: center;
   align-items: center;
-  margin: auto;
+  margin: auto 10px;
 }
 
 .item-title small {
@@ -66,24 +68,109 @@ body {
 
 .item-actions {
   display: flex;
+  margin: auto 0;
 }
 
 .item-action {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  opacity: 0.25;
+}
+
+.item-action:hover {
+  opacity: 1;
 }
 
 .itemCount {
-  max-width: 100px;
+  min-width: 95px;
+  max-width: 150px;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  height: auto;
+  padding: 0px 10px;
+  height: 30px;
   border-radius: 20px;
+}
+
+.price {
+  text-align: center;
 }
 
 .priceTotal {
   float: right;
+  display: flex;
+  align-items: baseline;
+}
+
+.priceTotal h1 {
+  font-size: 30px;
+}
+
+.action-icon {
+  width: 30px;
+  height: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nOfItems {
+  pointer-events: none;
+}
+
+.cart-title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.credit-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.credit-card {
+  padding: 40px 30px;
+  width: 100%;
+  height: 230px;
+  border-radius: 20px;
+  background: #1d2029;
+  box-shadow: 0px 0px 15px rgba(95, 112, 122, 0.9);
+}
+
+.credit-card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.credit-card h5 {
+  font-size: 15px;
+  letter-spacing: 8px;
+  margin-top: 60px;
+  color: white;
+}
+
+.card-name {
+  color: white;
+  font-size: 12px;
+  margin: 10px 0;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.card-date {
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.credit-form {
+  width: 100%;
+  height: 400px;
+  background: blue;
 }
