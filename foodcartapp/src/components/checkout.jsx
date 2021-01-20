@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
 class Checkout extends Component {
-  //   mobileView = (colunm) => {
-  //     if (screen.width < 1000) {
-  //       let col = colunm;
-  //     }
-  //   };
+  mobileView = (colunm) => {
+    let col = "";
+    if (window.width < 1000) {
+      col = colunm;
+    }
+    return col;
+  };
 
   render() {
     return (
